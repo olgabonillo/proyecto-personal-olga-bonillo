@@ -1,5 +1,6 @@
 import '../styles/App.scss';
 import Header from './Header';
+import Hero from './Hero';
 //import Hero from './Hero';
 //import ImagesGallery from './ImagesGallery';
 
@@ -7,7 +8,8 @@ import Header from './Header';
 function App() {
   return (
     <>
-    <Header></Header>
+    <Header/>
+    <Hero/>
       
     </>
   );

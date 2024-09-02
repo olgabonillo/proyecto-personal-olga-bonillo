@@ -5,15 +5,53 @@
 }
 
 body {
-  background-color: beige;
+  background-color: white;
 }
 
-.title {
-  font-family: "Nerko One", cursive;
-  color: #641c34;
+.img {
+  height: auto;
+  width: 300px;
 }
 
 .slogan {
   font-family: "Playfair Display", serif;
-  color: #641c34;
+  color: #c4dbdb;
 }
+
+.nav {
+  padding: 10px;
+  border: #c4dbdb solid;
+}
+
+.list-nav {
+  font-family: "Playfair Display", serif;
+  color: black;
+  list-style-type: none;
+  border: #c4dbdb solid;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.list-nav a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+
+.titles {
+  font-family: "Playfair Display", serif;
+  color: #c4dbdb;
+  display: column;
+}
+
+.div-1 {
+padding: 10px;
+margin: 10px;
+}
+
+.div-2 {
+  padding: 10px;
+  margin: 10px;
+  }
