@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3",
     "node-sass": "^9.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -26,5 +31,9 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.4"
-  }
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

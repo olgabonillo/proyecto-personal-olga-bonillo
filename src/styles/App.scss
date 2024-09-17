@@ -5,29 +5,30 @@
 }
 
 body {
-  background-color: white;
+  background-color: #F7F7F7;
 }
 
 .img {
   height: auto;
-  width: 300px;
+  width: 400px;
 }
 
 .slogan {
-  font-family: "Playfair Display", serif;
-  color: #c4dbdb;
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  color: #abd3db;
 }
 
 .nav {
   padding: 10px;
-  border: #c4dbdb solid;
+  border: #abd3db solid;
 }
 
 .list-nav {
   font-family: "Playfair Display", serif;
   color: black;
   list-style-type: none;
-  border: #c4dbdb solid;
+  border: #abd3db solid;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -41,17 +42,48 @@ body {
 }
 
 .titles {
-  font-family: "Playfair Display", serif;
-  color: #c4dbdb;
-  display: column;
+  font-family: "Caveat", cursive;
+    font-size: 40px;
+    color: #abd3db;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-.div-1 {
+.text {
+  font-size: 20px;
+}
+
+.div {
 padding: 10px;
 margin: 10px;
 }
 
-.div-2 {
+.div-father {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div-postures {
   padding: 10px;
-  margin: 10px;
-  }
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.postures {
+  font-family: "Caveat", cursive;
+  color: #abd3db;
+  font-size: 30px;
+}
+
+.img-gallery{
+  height: 250px;
+  width: 300px;
+  border: #abd3db solid;
+}
+
+.list-postures {
+  list-style-type: none;
+  display: column; 
+  gap: 10px; 
+  font-size: 18px;
+}
