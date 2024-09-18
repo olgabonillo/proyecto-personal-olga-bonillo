@@ -1,9 +1,9 @@
-import balasana from "../assets/images/balasana.png";
-import ustrasana from "../assets/images/ustrasana.png";
-import adhoMukha from "../assets/images/adho-mukha.jpg";
-import savasana from "../assets/images/savasana.jpg";
-import gatoVaca from "../assets/images/cat-cow-pose.jpg";
-import anantasana from "../assets/images/anantasana.webp";
+import balasana from "../images/balasana.png";
+import ustrasana from "../images/ustrasana.png";
+import adhoMukha from "../images/adho-mukha.jpg";
+import savasana from "../images/savasana.jpg";
+import gatoVaca from "../images/cat-cow-pose.jpg";
+import anantasana from "../images/anantasana.webp";
 
 
 function Hero() {

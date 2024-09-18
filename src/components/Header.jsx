@@ -1,8 +1,14 @@
+
+import phototitle from "../images/logo-yoga-jessi.jpeg";
+
 function Header() {
   return (
     <>
       <h1 className="title">
-        <img className="img" src="./src/assets/images/logo-yoga-jessi.jpeg" alt="logo"></img>
+        <img 
+        className="img" 
+        src={phototitle} 
+        alt="logo"></img>
       </h1>
       <h2 className="slogan">
         Cuida tu cuerpo, es el único lugar que tienes para vivir.
