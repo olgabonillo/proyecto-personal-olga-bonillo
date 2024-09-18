@@ -1,3 +1,11 @@
+import balasana from "../assets/images/balasana.png";
+import ustrasana from "../assets/images/ustrasana.png";
+import adhoMukha from "../assets/images/adho-mukha.jpg";
+import savasana from "../assets/images/savasana.jpg";
+import gatoVaca from "../assets/images/cat-cow-pose.jpg";
+import anantasana from "../assets/images/anantasana.webp";
+
+
 function Hero() {
   return (
     <>
@@ -66,7 +74,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/adho-mukha.jpg"
+            src={adhoMukha}
             alt="postura adho mukha"
           ></img>
           <h3 className="postures">Adho Mukha Svanasana</h3>
@@ -88,7 +96,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/savasana.jpg"
+            src={savasana}
             alt="postura savasana"
           ></img>
           <h3 className="postures">Savasana</h3>
@@ -106,7 +114,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/cat-cow-pose.jpg"
+            src={gatoVaca}
             alt="postura gato vaca"
           ></img>
           <h3 className="postures">Bitilasana Marjaryasana</h3>
@@ -127,7 +135,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/balasana.png"
+            src={balasana}
             alt="postura balasana"
           ></img>
           <h3 className="postures">Balasana</h3>
@@ -149,7 +157,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/ustrasana.png"
+            src={ustrasana}
             alt="postura ustrasana"
           ></img>
           <h3 className="postures">Ustrasana</h3>
@@ -168,7 +176,7 @@ function Hero() {
         <div className="div-postures">
           <img
             className="img-gallery"
-            src="src/images/anantasana.webp"
+            src={anantasana}
             alt="postura anantasana"
           ></img>
           <h3 className="postures">Anantasana</h3>
