@@ -39,14 +39,20 @@ body {
   text-decoration: none;
   color: #000;
   margin: 0 10px;
+  transition: color ease 0.8s;
+
+  &:hover {
+    color: #abd3db;
+    text-decoration: underline;
+  }
 }
 
 .titles {
   font-family: "Caveat", cursive;
-    font-size: 40px;
-    color: #abd3db;
-    grid-column-start: 1;
-    grid-column-end: 4;
+  font-size: 40px;
+  color: #abd3db;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .text {
@@ -54,8 +60,8 @@ body {
 }
 
 .div {
-padding: 10px;
-margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .div-father {
@@ -75,7 +81,7 @@ margin: 10px;
   font-size: 30px;
 }
 
-.img-gallery{
+.img-gallery {
   height: 250px;
   width: 300px;
   border: #abd3db solid;
@@ -83,7 +89,7 @@ margin: 10px;
 
 .list-postures {
   list-style-type: none;
-  display: column; 
-  gap: 10px; 
+  display: column;
+  gap: 10px;
   font-size: 18px;
 }
