@@ -1,4 +1,3 @@
-
 import phototitle from "../images/logo-yoga-jessi.jpeg";
 
 function Header() {
