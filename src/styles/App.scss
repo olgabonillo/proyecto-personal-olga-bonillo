@@ -120,3 +120,30 @@ body {
 .gallery-item img:hover {
   transform: scale(1.05);
 }
+
+.img-icons {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  padding: 5px;
+  gap: 5px;
+}
+
+.footer {
+  border: #abd3db solid;
+  padding: 5px;
+  margin: 10px;
+}
+
+.contact {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  color: #abd3db;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 80px;
+}
