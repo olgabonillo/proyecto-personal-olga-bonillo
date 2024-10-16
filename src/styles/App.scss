@@ -130,9 +130,18 @@ body {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: #abd3db solid;
   padding: 5px;
-  margin: 10px;
+}
+
+.text-footer {
+  display: inline-flex;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  margin-right: 60px;
 }
 
 .contact {
@@ -141,9 +150,38 @@ body {
   color: #abd3db;
 }
 
-.logo-footer {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  width: 80px;
+.fa-brands {
+  display: inline-flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 8px;
+  transition: color ease 0.8s;
+
+  &:hover {
+    color: #abd3db;
+    text-decoration: underline;
+  }
+}
+  .fa-regular {
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 8px;
+    transition: color ease 0.8s;
+
+    &:hover {
+      color: #abd3db;
+      text-decoration: underline;
+    }
+  }
+  .sticky {
+    position: -webkit-sticky; /* Soporte para Safari */
+    position: sticky;
+    top: 0; /* Se quedará en la parte superior cuando se llegue aquí */
+    z-index: 1000; /* Para asegurarte de que quede sobre otros elementos */
+    background-color: #F7F7F7;
+    padding-bottom: 15px;
+  }
+  [id] {
+    scroll-margin-top: 150px; /* Ajusta el valor según la altura de tu sticky */
 }

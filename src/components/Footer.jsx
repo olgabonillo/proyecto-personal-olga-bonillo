@@ -1,30 +1,21 @@
-import whatsapp from "../images/whatsapp-icon.avif";
-import instagram from "../images/instagram.png";
-import email from "../images/email.png";
-import logo from "../images/logo-yoga-jessi.jpeg";
-
 function Footer() {
   return (
     <>
       <main>
-        <div>
+        <div id="contact">
           <h1 className="contact">Contacto</h1>
         </div>
         <div className="footer">
-          <a aria-label="Chat on WhatsApp" href="https://wa.me/34619393123">
-            <img className="img-icons" alt="WhatsApp" src={whatsapp} />
+            <p className="text-footer">Yoga con Jessica González © 2024</p>
+          <a href="https://wa.me/34619393123" target="_black">
+            <i className="fa-brands fa-whatsapp" style={{ color: '#000' }}></i>
           </a>
-          <a aria-label="Chat on instagram" href="https://www.instagram.com/">
-            <img className="img-icons" alt="instagram" src={instagram} />
+          <a href="https://www.instagram.com/" target="_black">
+            <i className="fa-brands fa-instagram" style={{ color: '#000' }}></i>
           </a>
-          <a aria-label="Chat on email" href="#">
-            <img className="img-icons" alt="email" src={email} />
+          <a href="mailto:olgaalaquas@gmail.com" target="_black">
+            <i className="fa-regular fa-envelope" style={{ color: '#000' }}></i>
           </a>
-          <div className="logo-footer">
-            <a aria-label="logo" href="#">
-              <img className="logo-footer" alt="logo" src={logo} />
-            </a>
-          </div>
         </div>
       </main>
     </>

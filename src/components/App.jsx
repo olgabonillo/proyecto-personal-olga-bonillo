@@ -1,8 +1,13 @@
 import '../styles/App.scss';
 import Header from './Header';
-import Hero from './Hero';
 import ImagesGallery from './ImagesGallery';
+import Benefits from './Benefits';
+import Characteristics from './Characteristics';
+import Kundalini from './Kundalini';
+import Postures from './Postures';
 import Footer from './Footer';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const images = [
   { url: 'https://widemat.com/wp-content/uploads/2015/09/postura-de-yoga-la-monta%C3%B1a.jpg', alt: 'tadasana' },
@@ -22,7 +27,10 @@ function App() {
     <>
     <Header/>
     <ImagesGallery images={images}/>
-    <Hero/> 
+    <Kundalini/>
+    <Benefits/> 
+    <Characteristics/>
+    <Postures/>
     <Footer/>
     </>
   );
