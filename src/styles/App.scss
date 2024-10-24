@@ -138,10 +138,17 @@ body {
 }
 
 .text-footer {
-  display: inline-flex;
+  display: flex;
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
   margin-right: 60px;
+}
+
+.text-form {
+  display: flex;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 60px;
 }
 
 .contact {
@@ -184,4 +191,16 @@ body {
   }
   [id] {
     scroll-margin-top: 150px; /* Ajusta el valor según la altura de tu sticky */
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.form {
+  background-color: #abd3db;
 }

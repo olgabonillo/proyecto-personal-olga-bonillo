@@ -6,6 +6,7 @@ import Characteristics from './Characteristics';
 import Kundalini from './Kundalini';
 import Postures from './Postures';
 import Footer from './Footer';
+import Form from "./Form";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -32,6 +33,7 @@ function App() {
     <Characteristics/>
     <Postures/>
     <Footer/>
+    <Form id="formulario" className="form" target="_black"></Form>
     </>
   );
 }
