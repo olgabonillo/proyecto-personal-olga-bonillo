@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Form = () => {
   const [formData, setFormData] = useState({
-    nombre: '',
-    telefono: '',
-    comentarios: ''
+    nombre: "",
+    telefono: "",
+    comentarios: "",
   });
 
   const [errors, setErrors] = useState({
     nombre: false,
     telefono: false,
-    comentarios: false
+    comentarios: false,
   });
 
   const handleChange = (e) => {
@@ -20,13 +20,13 @@ const Form = () => {
 
   const validarFormulario = () => {
     const newErrors = {
-      nombre: formData.nombre.trim() === '',
-      telefono: formData.telefono.trim() === '',
-      comentarios: formData.comentarios.trim() === ''
+      nombre: formData.nombre.trim() === "",
+      telefono: formData.telefono.trim() === "",
+      comentarios: formData.comentarios.trim() === "",
     };
     setErrors(newErrors);
-    
-    // Verifica si hay errores
+
+    // Para verificar si hay errores
     return !Object.values(newErrors).includes(true);
   };
 
@@ -34,48 +34,63 @@ const Form = () => {
     e.preventDefault();
 
     if (validarFormulario()) {
-      alert('Formulario enviado con éxito');
-      console.log('Datos enviados:', formData);
+      alert("Formulario enviado con éxito");
+      console.log("Datos enviados:", formData);
     } else {
-      alert('Por favor, completa todos los campos obligatorios');
+      alert("Por favor, completa todos los campos obligatorios");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Nombre:</label>
+    //Todos los campos los pongo obligatorios
+    <form onSubmit={handleSubmit} className="form">
+      <div className="div-form">
+        <label className="label">Nombre:</label>
         <input
+          className="input"
           type="text"
           name="nombre"
+          placeholder="Ej: Laura"
           value={formData.nombre}
           onChange={handleChange}
         />
-        {errors.nombre && <span style={{ color: 'red' }}>Campo obligatorio</span>}
+        {errors.nombre && (
+          <span style={{ color: "red" }}>Campo obligatorio</span>
+        )}
       </div>
-      
-      <div>
-        <label>Teléfono:</label>
+
+      <div className="div-form">
+        <label className="label">Teléfono:</label>
         <input
+          className="input"
           type="tel"
           name="telefono"
+          placeholder="Ej: 612345678"
           value={formData.telefono}
           onChange={handleChange}
         />
-        {errors.telefono && <span style={{ color: 'red' }}>Campo obligatorio</span>}
+        {errors.telefono && (
+          <span style={{ color: "red" }}>Campo obligatorio</span>
+        )}
       </div>
-      
-      <div>
-        <label>Comentarios adicionales:</label>
+
+      <div className="div-form">
+        <label className="label">Comentarios adicionales:</label>
         <textarea
+          className="input-text"
+          type="text"
           name="comentarios"
+          placeholder="Ej: Me gustaría que os pongáis en contacto conmigo para informarme acerca de las clases..."
           value={formData.comentarios}
           onChange={handleChange}
         />
-        {errors.comentarios && <span style={{ color: 'red' }}>Campo obligatorio</span>}
+        {errors.comentarios && (
+          <span style={{ color: "red" }}>Campo obligatorio</span>
+        )}
       </div>
-      
-      <button type="submit">Enviar</button>
+      <button type="submit" className="button-form">
+        Enviar
+      </button>
     </form>
   );
 };

@@ -141,14 +141,14 @@ body {
   display: flex;
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
-  margin-right: 60px;
+  //margin-right: 60px;
 }
 
 .text-form {
   display: flex;
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
-  margin-left: 60px;
+  //margin-left: 60px;
 }
 
 .contact {
@@ -203,4 +203,36 @@ body {
 
 .form {
   background-color: #abd3db;
+}
+
+.button-form {
+  cursor: pointer;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  background-color: #F7F7F7;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.div-form {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  padding: 10px;
+}
+
+.input {
+  font-family: "Quicksand", sans-serif;
+}
+
+.input-text {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+  margin: 5px;
 }

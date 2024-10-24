@@ -32,8 +32,8 @@ function App() {
     <Benefits/> 
     <Characteristics/>
     <Postures/>
-    <Footer/>
-    <Form id="formulario" className="form" target="_black"></Form>
+    <Footer className="form" target="_blanck"/>
+    <Form id="formulario"></Form>
     </>
   );
 }
