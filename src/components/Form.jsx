@@ -41,57 +41,63 @@ const Form = () => {
     }
   };
 
+
   return (
     //Todos los campos los pongo obligatorios
-    <form onSubmit={handleSubmit} className="form">
-      <div className="div-form">
-        <label className="label">Nombre:</label>
-        <input
-          className="input"
-          type="text"
-          name="nombre"
-          placeholder="Ej: Laura"
-          value={formData.nombre}
-          onChange={handleChange}
-        />
-        {errors.nombre && (
-          <span style={{ color: "red" }}>Campo obligatorio</span>
-        )}
-      </div>
+    //Creo el primer div con un ID para mostrar el formulario cuando cliquen 
+    <>
+      <div id="form"> 
+        <form onSubmit={handleSubmit} className="form">
+          <div className="div-form">
+            <label className="label">Nombre:</label>
+            <input
+              className="input"
+              type="text"
+              name="nombre"
+              placeholder="Ej: Laura"
+              value={formData.nombre}
+              onChange={handleChange}
+            />
+            {errors.nombre && (
+              <span style={{ color: "red" }}>Campo obligatorio</span>
+            )}
+          </div>
 
-      <div className="div-form">
-        <label className="label">Teléfono:</label>
-        <input
-          className="input"
-          type="tel"
-          name="telefono"
-          placeholder="Ej: 612345678"
-          value={formData.telefono}
-          onChange={handleChange}
-        />
-        {errors.telefono && (
-          <span style={{ color: "red" }}>Campo obligatorio</span>
-        )}
-      </div>
+          <div className="div-form">
+            <label className="label">Teléfono:</label>
+            <input
+              className="input"
+              type="tel"
+              name="telefono"
+              placeholder="Ej: 612345678"
+              value={formData.telefono}
+              onChange={handleChange}
+            />
+            {errors.telefono && (
+              <span style={{ color: "red" }}>Campo obligatorio</span>
+            )}
+          </div>
 
-      <div className="div-form">
-        <label className="label">Comentarios adicionales:</label>
-        <textarea
-          className="input-text"
-          type="text"
-          name="comentarios"
-          placeholder="Ej: Me gustaría que os pongáis en contacto conmigo para informarme acerca de las clases..."
-          value={formData.comentarios}
-          onChange={handleChange}
-        />
-        {errors.comentarios && (
-          <span style={{ color: "red" }}>Campo obligatorio</span>
-        )}
+          <div className="div-form">
+            <label className="label">Comentarios adicionales:</label>
+            <textarea
+              className="input-text"
+              type="text"
+              name="comentarios"
+              placeholder="Ej: Me gustaría informarme más..."
+              value={formData.comentarios}
+              onChange={handleChange}
+            />
+            {errors.comentarios && (
+              <span style={{ color: "red" }}>Campo obligatorio</span>
+            )}
+          </div>
+          <button type="submit" className="button-form">
+            Enviar
+          </button>
+        </form>
       </div>
-      <button type="submit" className="button-form">
-        Enviar
-      </button>
-    </form>
+    </>
   );
 };
 

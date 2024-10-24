@@ -2,7 +2,7 @@ function Benefits() {
   return (
     <div className="div" id="benefits">
         <h1 className="titles">Beneficios de practicar kundalini yoga</h1>
-        <p className="text">
+        <p className="list-postures">
           El Kundalini yoga ayuda a reducir la ansiedad al promover la
           relajación y la calma mental a través de técnicas de respiración y
           meditación. Aumenta la autoestima. Esta práctica fomenta la confianza

@@ -18,10 +18,10 @@ function Postures() {
           alt="postura adho mukha"
         ></img>
         <h3 className="postures">Adho Mukha Svanasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>
-              Fortalece la musculatura de la espalda, los brazos y las piernas.
+            Fortalece la musculatura de la espalda, los brazos y las piernas.
             </li>
             <li>Mejora los dolores de cuello y hombros.</li>
             <li>Estira isquiotibiales y gemelos.</li>
@@ -30,7 +30,7 @@ function Postures() {
             </li>
             <li>Alivia la tensión y el estrés.</li>
           </ul>
-        </p>
+        
       </div>
       <div className="div-postures">
         <img
@@ -39,7 +39,7 @@ function Postures() {
           alt="postura savasana"
         ></img>
         <h3 className="postures">Savasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>Activa el sistema nervioso parasimpático.</li>
             <li>Ayuda a calmar el cuerpo y la mente.</li>
@@ -48,7 +48,7 @@ function Postures() {
               Reduce los niveles de hormonas del estrés y alivia la ansiedad.
             </li>
           </ul>
-        </p>
+        
       </div>
       <div className="div-postures">
         <img
@@ -57,7 +57,7 @@ function Postures() {
           alt="postura gato vaca"
         ></img>
         <h3 className="postures">Bitilasana Marjaryasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>Fortalece los músculos de las manos y muñecas.</li>
             <li>Induce al estado meditativo.</li>
@@ -69,7 +69,7 @@ function Postures() {
               superior de la espalda.
             </li>
           </ul>
-        </p>
+        
       </div>
       <div className="div-postures">
         <img
@@ -78,7 +78,7 @@ function Postures() {
           alt="postura balasana"
         ></img>
         <h3 className="postures">Balasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>
               Ayuda a estirar la espalda y los músculos alrededor de las
@@ -90,7 +90,7 @@ function Postures() {
             <li>Es una pose de reposo practicada en posición fetal.</li>
             <li>Su principal enfoque es trabajar la parte de los muslos.</li>
           </ul>
-        </p>
+        
       </div>
       <div className="div-postures">
         <img
@@ -99,7 +99,7 @@ function Postures() {
           alt="postura ustrasana"
         ></img>
         <h3 className="postures">Ustrasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>
               Fortalece los músculos de la espalda, el abdomen, los muslos, las
@@ -109,7 +109,7 @@ function Postures() {
             <li>Sirve para flexibilizar la espalda.</li>
             <li>Ayuda a corregir una mala postura de la columna.</li>
           </ul>
-        </p>
+        
       </div>
       <div className="div-postures">
         <img
@@ -118,7 +118,7 @@ function Postures() {
           alt="postura anantasana"
         ></img>
         <h3 className="postures">Anantasana</h3>
-        <p className="text">
+        
           <ul className="list-postures">
             <li>Estira los músculos de la pierna y la cadera.</li>
             <li>Fortalece la parte del muslo.</li>
@@ -129,7 +129,6 @@ function Postures() {
               bíceps y el tríceps, y los músculos centrales.
             </li>
           </ul>
-        </p>
       </div>
     </div>
   );

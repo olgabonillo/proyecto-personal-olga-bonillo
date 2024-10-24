@@ -2,7 +2,7 @@ function Characteristics() {
   return (
     <div className="div" id="characteristics">
         <h1 className="titles">Características de practicar kundalini yoga</h1>
-        <p className="text">
+        <p className="list-postures">
           La práctica se basa en Kriyas, la palabra Kriya significa acción
           (aunque también son técnicas de limpieza del cuerpo). Se trata de una
           secuencia de posturas de yoga y ejercicios dinámicos, en las que se

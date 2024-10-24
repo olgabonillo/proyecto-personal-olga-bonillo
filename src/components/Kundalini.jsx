@@ -2,7 +2,7 @@ function Kundalini() {
   return (
     <div className="div" id="kundalini">
         <h1 className="titles">¿Qué es el kundalini yoga?</h1>
-        <p className="text">
+        <p className="list-postures">
           El Kundalini Yoga es mucho más que una serie de posturas; es un
           despertar de la energía dormida en la base de tu columna vertebral,
           conocido como Kundalini. Esta energía, cuando se activa, se eleva a

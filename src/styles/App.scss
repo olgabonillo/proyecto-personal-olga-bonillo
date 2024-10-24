@@ -55,7 +55,7 @@ body {
   grid-column-end: 4;
 }
 
-.text {
+.list-postures {
   font-size: 20px;
   font-family: "Quicksand", sans-serif;
 }
@@ -193,6 +193,10 @@ body {
     scroll-margin-top: 150px; /* Ajusta el valor según la altura de tu sticky */
 }
 
+.separated {
+  color: #abd3db;
+  font-family: "Quicksand", sans-serif;;
+}
 .copyright {
   display: flex;
   justify-content: center;
@@ -203,6 +207,7 @@ body {
 
 .form {
   background-color: #abd3db;
+  display: none;
 }
 
 .button-form {
