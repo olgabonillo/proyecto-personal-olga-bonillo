@@ -207,7 +207,7 @@ body {
 
 .form {
   background-color: #abd3db;
-  display: none;
+  //display: none;
 }
 
 .button-form {
@@ -230,6 +230,7 @@ body {
 
 .label {
   padding: 10px;
+  display: flex;
 }
 
 .input {
@@ -240,4 +241,5 @@ body {
   font-family: "Quicksand", sans-serif;
   padding: 10px;
   margin: 5px;
+  display: flex;
 }

@@ -18,6 +18,8 @@ const Form = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  
+//.trim() para eliminar los espacios en blanco del string
   const validarFormulario = () => {
     const newErrors = {
       nombre: formData.nombre.trim() === "",
@@ -34,13 +36,23 @@ const Form = () => {
     e.preventDefault();
 
     if (validarFormulario()) {
-      alert("Formulario enviado con éxito");
+      alert("Gracias por contactar con nosotros. El formulario se ha enviado correctamente y nos pondremos en contacto contigo en la mayor brevedad posible.");
       console.log("Datos enviados:", formData);
     } else {
       alert("Por favor, completa todos los campos obligatorios");
     }
   };
 
+  //Para que se muestre el formulario cuando hago click 
+  /* document.getElementById('showForm').addEventListener('click', function() {
+        const formulario = document.getElementById('form');
+        if (formulario.style.display === 'none') {
+            formulario.style.display = 'block';
+        } else {
+            formulario.style.display = 'none';
+        }
+    }); */
+  
 
   return (
     //Todos los campos los pongo obligatorios
@@ -59,7 +71,7 @@ const Form = () => {
               onChange={handleChange}
             />
             {errors.nombre && (
-              <span style={{ color: "red" }}>Campo obligatorio</span>
+              <span style={{ color: "red" }}>Campo obligatorio*</span>
             )}
           </div>
 
@@ -74,12 +86,12 @@ const Form = () => {
               onChange={handleChange}
             />
             {errors.telefono && (
-              <span style={{ color: "red" }}>Campo obligatorio</span>
+              <span style={{ color: "red" }}>Campo obligatorio*</span>
             )}
           </div>
 
-          <div className="div-form">
             <label className="label">Comentarios adicionales:</label>
+            <div className="coment-form">
             <textarea
               className="input-text"
               type="text"
@@ -89,7 +101,7 @@ const Form = () => {
               onChange={handleChange}
             />
             {errors.comentarios && (
-              <span style={{ color: "red" }}>Campo obligatorio</span>
+              <span style={{ color: "red" }}>Campo obligatorio*</span>
             )}
           </div>
           <button type="submit" className="button-form">
@@ -100,5 +112,6 @@ const Form = () => {
     </>
   );
 };
+
 
 export default Form;

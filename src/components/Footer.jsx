@@ -1,15 +1,5 @@
 function Footer() {
 
- /*  document.getElementById("showForm").addEventListener("click", function() {
-    var form = document.getElementById("contactForm");
-    if (form.style.display === "none" || form.style.display === "") {
-      form.style.display = "block";
-    } else {
-      form.style.display = "none";
-    } 
-  }); */
-
-
   return (
     <>
       <main>
@@ -37,7 +27,7 @@ function Footer() {
               pulsando aquí
             </a>
           </p>
-        </div>
+          </div>
         <div>
           <p className="copyright">Yoga con Jessica González © 2024</p>
         </div>
