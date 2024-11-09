@@ -18,8 +18,7 @@ const Form = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  
-//.trim() para eliminar los espacios en blanco del string
+  //.trim() para eliminar los espacios en blanco del string
   const validarFormulario = () => {
     const newErrors = {
       nombre: formData.nombre.trim() === "",
@@ -36,29 +35,32 @@ const Form = () => {
     e.preventDefault();
 
     if (validarFormulario()) {
-      alert("Gracias por contactar con nosotros. El formulario se ha enviado correctamente y nos pondremos en contacto contigo en la mayor brevedad posible.");
+      alert(
+        "Gracias por contactar con nosotros. El formulario se ha enviado correctamente y nos pondremos en contacto contigo en la mayor brevedad posible."
+      );
       console.log("Datos enviados:", formData);
     } else {
       alert("Por favor, completa todos los campos obligatorios");
     }
   };
 
-  //Para que se muestre el formulario cuando hago click 
-  /* document.getElementById('showForm').addEventListener('click', function() {
-        const formulario = document.getElementById('form');
-        if (formulario.style.display === 'none') {
-            formulario.style.display = 'block';
-        } else {
-            formulario.style.display = 'none';
-        }
-    }); */
-  
+  // Estado para controlar la visibilidad del formulario
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+
+  // Función para manejar el clic en el enlace
+  const manejarClick = () => {
+    setMostrarFormulario(!mostrarFormulario); // Alterna entre true y false
+  };
+
 
   return (
     //Todos los campos los pongo obligatorios
-    //Creo el primer div con un ID para mostrar el formulario cuando cliquen 
+    //Creo el primer div con un ID para mostrar el formulario cuando hagan click 
     <>
-      <div id="form"> 
+      <div id="form">
+      <a href="#formulario" onClick={manejarClick}>
+        {mostrarFormulario}
+      </a>
         <form onSubmit={handleSubmit} className="form">
           <div className="div-form">
             <label className="label">Nombre:</label>
@@ -89,20 +91,21 @@ const Form = () => {
               <span style={{ color: "red" }}>Campo obligatorio*</span>
             )}
           </div>
-
+          <div className="div-form">
             <label className="label">Comentarios adicionales:</label>
             <div className="coment-form">
-            <textarea
-              className="input-text"
-              type="text"
-              name="comentarios"
-              placeholder="Ej: Me gustaría informarme más..."
-              value={formData.comentarios}
-              onChange={handleChange}
-            />
-            {errors.comentarios && (
-              <span style={{ color: "red" }}>Campo obligatorio*</span>
-            )}
+              <textarea
+                className="input"
+                type="text"
+                name="comentarios"
+                placeholder="Ej: Me gustaría informarme más..."
+                value={formData.comentarios}
+                onChange={handleChange}
+              />
+              {errors.comentarios && (
+                <span style={{ color: "red" }}>Campo obligatorio*</span>
+              )}
+            </div>
           </div>
           <button type="submit" className="button-form">
             Enviar
@@ -112,6 +115,5 @@ const Form = () => {
     </>
   );
 };
-
 
 export default Form;
